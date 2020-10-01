@@ -1,0 +1,26 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: Simple Lambda API Gateway integration
+
+Resources:
+  api:
+    Type: AWS::Serverless::HttpApi
+
+  handler:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: src/
+      Handler: index.handler
+      Runtime: nodejs12.x
+      Events:
+        api:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref api
+            Path: /
+            Method: GET
+
+Outputs:
+  WebEndpoint:
+    Description: "API Gateway endpoint URL"
+    Value: !Sub "https://${api}.execute-api.${AWS::Region}.amazonaws.com"

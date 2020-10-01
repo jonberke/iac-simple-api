@@ -1,0 +1,6 @@
+{
+    "name": "iac-api-sam",
+    "description": "sam api gateway sample",
+    "version": "0.0.1",
+    "private": true
+}
