@@ -26,13 +26,13 @@ Additionally, you'll need to run `npm install` in each subdirectory before you c
 
 ## ECS and Lambda
 
-* `npm run build`
-* `cdk deploy`
+1. `npm run build`
+1. `cdk deploy`
 
 ## SAM
 
-* `sam build`
-* `sam deploy --guided`
+1. `sam build`
+1. `sam deploy --guided`
 
 # Usage
 The CloudFormation output from each deploy includes the API URL you can GET to verify the
@@ -43,9 +43,9 @@ found in the stack's Outputs section in the AWS Console.
 
 ## ECS and Lambda
 
-1. Delete the stack from the AWS console or run `cdk destroy`
+* Delete the stack from the AWS console or run `cdk destroy`
 
 ## SAM
 
-1. Delete the stack from the CloudFormation page in AWS Console or run
+* Delete the stack from the CloudFormation page in AWS Console or run
 `aws cloudformation delete-stack --stack-name <stack name>`
