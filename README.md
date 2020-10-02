@@ -1,6 +1,6 @@
 # About
 This repo contains the source code referred to in the [simple API infrastructure as code blog
-post](https://out-with-the-old.theberkes.com/posts/iac-simple-api/).
+post](https://blog.OutWithTheOld.info/posts/simple-api-iac/).
 
 Each directory takes a different approach at solving the problem:
 
